@@ -15,7 +15,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from load_heter import load_data, create_clean
 gpu = 1
 device = torch.device('cuda:'+str(gpu) if torch.cuda.is_available() else 'cpu')
-
+ 
 
 
 def main(args):
