@@ -1,0 +1,11 @@
+numpy==1.23.5
+pandas==1.5.2
+scipy==1.9.3
+torch==1.12.0+cu113
+torch-cluster==1.6.0+pt112cu113
+torch-geometric==2.0.4
+torch-scatter==2.1.0+pt112cu113
+torch-sparse==0.6.15+pt112cu113
+torch-spline-conv==1.2.1+pt112cu113
+networkx==2.8.5
+scikit-learn==1.1.3
