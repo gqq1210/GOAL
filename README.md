@@ -1,8 +1,8 @@
-# LNP
+# GOAL
 
-This repository is the official implementation of *Against Label Noise with PGM for Graph Neural Networks*.
+This repository is the official implementation of *Graph Neural Networks with PGM for Resisting Label Noise*.
 
-![The proposed framework](./LNP.png)
+![The proposed framework](./GOAL.png)
 
 ## Setup
 
@@ -28,11 +28,11 @@ pip install -r requirements.txt
 ```
 ## Usage
 
-An example of training LNP-v1:
+An example of training GOAL-v1:
 ```
-python LNP_v1.py --dataset cora --noise_type flip --ptb 0.8
+python GOAL_v1.py --dataset cora --noise_type flip --ptb 0.8
 ```
-An example of training PRGNN-v2:
+An example of training GOAL-v2:
 ```
-python LNP_v2.py --dataset chameleon --noise_type uniform --ptb 0.8
+python GOAL_v2.py --dataset chameleon --noise_type uniform --ptb 0.8
 ```
