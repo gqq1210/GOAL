@@ -107,7 +107,7 @@ def main(args):
         GCN_Qi.reset_parameters()
         GCN_Re.reset_parameters()
 
-    idx_val_test = np.concatenate((idx_val, idx_test), axis=0) # kl和对比的时候用的是test+val的节点，如果加入train，效果有时高有时低了
+    idx_val_test = np.concatenate((idx_val, idx_test), axis=0)
 
     optimizer = torch.optim.Adam(itertools.chain(GCN_Pi.parameters(), GCN_Qi.parameters(), GCN_Re.parameters()), lr=args.learning_rate, weight_decay=args.weight_decay)
     criterion = torch.nn.CrossEntropyLoss(reduction='none')
